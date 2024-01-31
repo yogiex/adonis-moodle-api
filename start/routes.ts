@@ -29,3 +29,7 @@ Route.get('/', async () => {
 Route.get('/users', 'UsersController.users' )
 Route.get('/users/count', 'UsersController.countUser' )
 Route.get('/users/lastaccess','UsersController.lastaccess')
+Route.get('/users/pagination','UsersController.pagination')
+Route.get('/users/sessions','UsersController.checkUserSession')
+
+Route.post('/login','AuthController.login')
